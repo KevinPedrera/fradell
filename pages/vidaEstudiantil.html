@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vida Estudiantil - Francisca de las Llagas</title>
+
+  <!-- Archivos de Estilos -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- CORRECCIÓN: Se añade el CSS común para heredar estilos -->
+  <link rel="stylesheet" href="../css/index.css" />
+  <link rel="stylesheet" href="../css/vidaEstudiantil.css" />
+</head>
+<body class="bg-beige-gradient">
+
+  <div class="top-bar d-none d-md-block">
+    <div class="container d-flex justify-content-between">
+      <div class="contact-info">
+        <a href="tel:022523664" class="me-3"><i class="bi bi-telephone-fill"></i> 02-2523664</a>
+        <a href="mailto:fradellsecretaria@gmail.com"><i class="bi bi-envelope-fill"></i> fradellsecretaria@gmail.com</a>
+      </div>
+      <div class="social-links">
+        <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="../index.html">
+        <img src="../img/logo1.png" alt="Logo Francisca de las Llagas" class="navbar-logo me-2">
+        <span class="fw-bold text-primary">Francisca de las Llagas</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Menú de navegación">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarMenu">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" href="../index.html"><i class="bi bi-house-door-fill me-2"></i>Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="institucion.html"><i class="bi bi-bank2 me-2"></i>Nuestra Institución</a></li>
+          <li class="nav-item"><a class="nav-link" href="pastoral.html"><i class="bi bi-peace-fill me-2"></i>Pastoral</a></li>
+          <li class="nav-item"><a class="nav-link active" href="vidaEstudiantil.html"><i class="bi bi-joystick me-2"></i>Vida Estudiantil</a></li>
+          <li class="nav-item"><a class="nav-link" href="informativo.html"><i class="bi bi-megaphone-fill me-2"></i>Informativo</a></li>
+          <li class="nav-item"><a class="nav-link" href="plataforma.html"><i class="bi bi-laptop-fill me-2"></i>Plataforma</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="page-header text-center text-white d-flex align-items-center justify-content-center">
+    <div class="container" data-aos="fade-in">
+      <h1 class="display-4 fw-bold">Vida Estudiantil</h1>
+      <p class="lead">Descubre un mundo de actividades más allá del aula.</p>
+    </div>
+  </header>
+
+  <main class="container my-5">
+    
+    <!-- Grupos Representativos -->
+    <section class="py-5" data-aos="fade-up">
+        <h3 class="fw-bold text-center mb-5 section-title"><span>Grupos Representativos</span></h3>
+        <div class="row g-4 justify-content-center">
+            <div class="col-md-6 col-lg-4">
+                <div class="club-card">
+                    <div class="club-icon" style="background-color: #e2d9f3;"><i class="bi bi-soundwave" style="color: #6f42c1;"></i></div>
+                    <h5 class="fw-bold mt-3">Banda de Paz</h5>
+                    <p class="text-muted">Disciplina, música y orgullo institucional. Nuestra banda de paz nos representa con gallardía en desfiles y eventos cívicos.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="club-card">
+                    <div class="club-icon" style="background-color: #f8d7da;"><i class="bi bi-person-arms-up text-danger"></i></div>
+                    <h5 class="fw-bold mt-3">Club de Danza</h5>
+                    <p class="text-muted">Expresa tu pasión por el movimiento y representa la riqueza cultural a través de la danza folclórica y moderna.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="club-card">
+                    <div class="club-icon" style="background-color: #cff4fc;"><i class="bi bi-star-fill text-info"></i></div>
+                    <h5 class="fw-bold mt-3">Cheerleaders</h5>
+                    <p class="text-muted">Energía, acrobacia y trabajo en equipo. Anima a nuestros equipos deportivos y compite llevando el espíritu del colegio a lo más alto.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clubes y Competencias Académicas -->
+    <section class="py-5" data-aos="fade-up">
+        <h3 class="fw-bold text-center mb-5 section-title"><span>Clubes y Competencias Académicas</span></h3>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-3">
+                <div class="club-card">
+                    <div class="club-icon" style="background-color: #e7f1ff;"><i class="bi bi-robot text-primary"></i></div>
+                    <h5 class="fw-bold mt-3">Club de Robótica</h5>
+                    <p class="text-muted">Diseña, construye y programa robots para competir y resolver desafíos del mundo real.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="club-card">
+                    <div class="club-icon" style="background-color: #fff3cd;"><i class="bi bi-calculator-fill text-warning"></i></div>
+                    <h5 class="fw-bold mt-3">Matemáticas</h5>
+                    <p class="text-muted">Prepárate para competencias, resolviendo problemas complejos y agudizando tu ingenio.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="club-card">
+                    <div class="club-icon" style="background-color: #d1e7dd;"><i class="bi bi-journal-bookmark-fill text-success"></i></div>
+                    <h5 class="fw-bold mt-3">Lengua y Literatura</h5>
+                    <p class="text-muted">Participa en certámenes de oratoria, declamación y literatura, desarrollando tus habilidades.</p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <div class="club-card">
+                    <div class="club-icon" style="background-color: #e9ecef;"><i class="bi bi-puzzle-fill text-secondary"></i></div>
+                    <h5 class="fw-bold mt-3">Concurso de Ajedrez</h5>
+                    <p class="text-muted">Desarrolla tu estrategia y compite en torneos que ponen a prueba tu concentración y táctica.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERÍA DE EVENTOS -->
+    <section class="py-5" data-aos="fade-up">
+        <h3 class="fw-bold text-center mb-5 section-title"><span>Eventos y Celebraciones</span></h3>
+        <div class="row g-4">
+            <div class="col-md-6 col-lg-4">
+                <div class="gallery-card">
+                    <img src="https://placehold.co/600x400/dc3545/ffffff?text=Navidad" alt="Celebración de Navidad">
+                    <div class="gallery-overlay"><h5>Navidad</h5></div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="gallery-card">
+                    <img src="https://placehold.co/600x400/0dcaf0/ffffff?text=Día+del+Niño" alt="Día del Niño">
+                    <div class="gallery-overlay"><h5>Día del Niño</h5></div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+                <div class="gallery-card">
+                    <img src="https://placehold.co/600x400/ffc107/000000?text=Fiestas+Patronales" alt="Fiestas Patronales">
+                    <div class="gallery-overlay"><h5>Fiestas Patronales</h5></div>
+                </div>
+            </div>
+             <div class="col-md-6 col-lg-4">
+                <div class="gallery-card">
+                    <img src="https://placehold.co/600x400/0d6efd/ffffff?text=Juramento+Bandera" alt="Juramento a la Bandera">
+                    <div class="gallery-overlay"><h5>Juramento a la Bandera</h5></div>
+                </div>
+            </div>
+             <div class="col-md-6 col-lg-4">
+                <div class="gallery-card">
+                    <img src="https://placehold.co/600x400/198754/ffffff?text=Día+de+la+Familia" alt="Día de la Familia">
+                    <div class="gallery-overlay"><h5>Día de la Familia</h5></div>
+                </div>
+            </div>
+             <div class="col-md-6 col-lg-4">
+                <div class="gallery-card">
+                    <img src="https://placehold.co/600x400/6f42c1/ffffff?text=Semana+Cultural" alt="Semana Cultural">
+                    <div class="gallery-overlay"><h5>Semana Cultural</h5></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  </main>
+
+  <footer class="footer-minimalista text-center py-4 mt-5">
+    <div class="container"><p class="mb-0 small">© 2025 Unidad Educativa Particular "Francisca de las Llagas". Todos los derechos reservados.</p></div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init({ duration: 800, easing: 'ease-in-out', once: true });</script>
+</body>
+</html>

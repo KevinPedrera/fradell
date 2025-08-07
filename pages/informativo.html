@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Informativo - Francisca de las Llagas</title>
+
+  <!-- Archivos de Estilos -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- CORRECCIÓN: Se añade el CSS común para heredar estilos -->
+  <link rel="stylesheet" href="../css/index.css" />
+  <link rel="stylesheet" href="../css/informativo.css" />
+</head>
+<body class="bg-beige-gradient">
+
+  <div class="top-bar d-none d-md-block">
+    <div class="container d-flex justify-content-between">
+      <div class="contact-info">
+        <a href="tel:022523664" class="me-3"><i class="bi bi-telephone-fill"></i> 02-2523664</a>
+        <a href="mailto:fradellsecretaria@gmail.com"><i class="bi bi-envelope-fill"></i> fradellsecretaria@gmail.com</a>
+      </div>
+      <div class="social-links">
+        <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+
+  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="../index.html">
+            <img src="../img/logo1.png" alt="Logo Francisca de las Llagas" class="navbar-logo me-2">
+            <span class="fw-bold text-primary">Francisca de las Llagas</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu" aria-controls="navbarMenu" aria-expanded="false" aria-label="Menú de navegación">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="../index.html"><i class="bi bi-house-door-fill me-2"></i>Inicio</a></li>
+                <li class="nav-item"><a class="nav-link" href="institucion.html"><i class="bi bi-bank2 me-2"></i>Nuestra Institución</a></li>
+                <li class="nav-item"><a class="nav-link" href="pastoral.html"><i class="bi bi-peace-fill me-2"></i>Pastoral</a></li>
+                <li class="nav-item"><a class="nav-link" href="vidaEstudiantil.html"><i class="bi bi-joystick me-2"></i>Vida Estudiantil</a></li>
+                <!-- CORRECCIÓN: Se marca este enlace como 'active' -->
+                <li class="nav-item"><a class="nav-link active" href="informativo.html"><i class="bi bi-megaphone-fill me-2"></i>Informativo</a></li>
+                <li class="nav-item"><a class="nav-link" href="plataforma.html"><i class="bi bi-laptop-fill me-2"></i>Plataforma</a></li>
+            </ul>
+        </div>
+    </div>
+  </nav>
+
+  <header class="page-header text-center text-white d-flex align-items-center justify-content-center">
+    <div class="container" data-aos="fade-in">
+      <h1 class="display-4 fw-bold">Informativo</h1>
+      <p class="lead">Anuncios, fechas importantes y recursos para nuestra comunidad.</p>
+    </div>
+  </header>
+
+  <main class="container my-5">
+
+    <section id="matriculas" class="anuncio-matriculas p-4 p-md-5 rounded-3 mb-5 shadow-lg" data-aos="fade-up">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold display-5 text-primary"><i class="bi bi-calendar2-check-fill me-2"></i>Proceso de Matrículas 2025-2026</h2>
+            <p class="lead text-muted">A continuación, encuentre toda la información necesaria.</p>
+        </div>
+
+        <div class="mb-5" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="text-center fw-bold mb-4">🗓️ Cronograma</h3>
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover text-center">
+                    <thead class="bg-primary text-white">
+                        <tr><th>Niveles / Cursos</th><th>Fecha</th></tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>Iniciales y Octavos Básica</td><td>Martes 05 de Agosto</td></tr>
+                        <tr><td>Preparatoria y Novenos Básica</td><td>Miércoles 06 de Agosto</td></tr>
+                        <tr><td>Segundos Básica y Décimos Básica</td><td>Jueves 07 de Agosto</td></tr>
+                        <tr><td>Terceros Básica y 1eros. Bachillerato</td><td>Viernes 08 de Agosto</td></tr>
+                        <tr><td>Cuartos Básica y 2dos. Bachillerato</td><td>Martes 12 de Agosto</td></tr>
+                        <tr><td>Quintos Básica y 3ros. Bachillerato</td><td>Miércoles 13 de Agosto</td></tr>
+                        <tr><td>Sextos Básica y Séptimos Básica</td><td>Jueves 14 de Agosto</td></tr>
+                        <tr class="table-danger"><td>Todos los estudiantes rezagados</td><td>Desde el 02 de Septiembre</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div data-aos="fade-up" data-aos-delay="200">
+            <h3 class="text-center fw-bold mb-4">📋 Requisitos</h3>
+            <ul class="nav nav-pills justify-content-center mb-4" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation"><button class="nav-link active" data-bs-toggle="pill" data-bs-target="#pills-nuevos" type="button">Estudiantes Nuevos</button></li>
+                <li class="nav-item" role="presentation"><button class="nav-link" data-bs-toggle="pill" data-bs-target="#pills-antiguos" type="button">Estudiantes de la Institución</button></li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active p-4" id="pills-nuevos" role="tabpanel">
+                    <!-- Contenido se inyecta con JS -->
+                </div>
+                <div class="tab-pane fade p-4" id="pills-antiguos" role="tabpanel">
+                    <!-- Contenido se inyecta con JS -->
+                </div>
+            </div>
+        </div>
+        
+        <div class="mt-5" data-aos="fade-up" data-aos-delay="300">
+             <div class="row g-4">
+                <div class="col-lg-6">
+                    <div class="card h-100 card-descargas">
+                        <div class="card-body text-center d-flex flex-column justify-content-center">
+                            <h5 class="card-title fw-bold"><i class="bi bi-cloud-download-fill me-2"></i>Descarga de Documentos</h5>
+                            <p class="small text-muted">Recuerde llenar y traer estos archivos.</p>
+                            <a href="../docs/DECE2526.pdf" class="btn btn-primary mt-2" target="_blank">Ficha DECE</a>
+                            <a href="../docs/MEDICO2526.pdf" class="btn btn-primary mt-2" target="_blank">Ficha Médica</a>
+                            <a href="../docs/CONTRA2526.pdf" class="btn btn-primary mt-2" target="_blank">Contrato de Servicios</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="card h-100 card-avisos">
+                        <div class="card-body text-center d-flex flex-column justify-content-center">
+                            <h5 class="card-title fw-bold"><i class="bi bi-exclamation-triangle-fill me-2"></i>Avisos Importantes</h5>
+                            <p class="mb-2">✔️ Estar al día en pensiones.</p>
+                            <p class="mb-0">✔️ Adjuntar comprobante de pago.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <hr class="my-5">
+
+    <section class="py-5" data-aos="fade-up">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-primary">Departamentos de Apoyo</h2>
+            <p class="text-muted">Estamos para ayudarte en tu proceso formativo y bienestar.</p>
+        </div>
+        <div class="row g-4 text-center">
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="dept-card p-4">
+                    <div class="dept-icon"><i class="bi bi-people-fill"></i></div>
+                    <h4 class="fw-bold mt-3">DECE</h4>
+                    <p>Acompañamiento psicológico, emocional y vocacional para nuestros estudiantes y sus familias.</p>
+                </div>
+            </div>
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="dept-card p-4">
+                    <div class="dept-icon"><i class="bi bi-heart-pulse-fill"></i></div>
+                    <h4 class="fw-bold mt-3">Médico</h4>
+                    <p>Atención primaria de salud, seguimiento de fichas médicas y promoción de hábitos saludables.</p>
+                </div>
+            </div>
+            <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="dept-card p-4">
+                    <div class="dept-icon"><i class="bi bi-shield-check"></i></div>
+                    <h4 class="fw-bold mt-3">Inspección</h4>
+                    <p>Velamos por la sana convivencia, el orden institucional y el cumplimiento de nuestro código.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="py-5" data-aos="fade-up">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-primary">Documentos Generales</h2>
+            <p class="text-muted">Recursos y formularios de utilidad para padres y estudiantes.</p>
+        </div>
+        <div class="card p-4 shadow-sm">
+            <div class="d-md-flex align-items-center">
+                <div class="flex-shrink-0 text-center mb-3 mb-md-0">
+                    <i class="bi bi-file-earmark-pdf-fill display-3 text-danger"></i>
+                </div>
+                <div class="flex-grow-1 ms-md-4 text-center text-md-start">
+                    <h5 class="fw-bold">Oficio de Justificación de Faltas</h5>
+                    <p class="mb-2 text-muted">Utilice este documento oficial para justificar las inasistencias de su representado.</p>
+                    <a href="../docs/oficio-faltas.pdf" class="btn btn-primary" target="_blank"><i class="bi bi-download me-2"></i>Descargar Oficio</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  </main>
+
+  <footer class="footer-minimalista text-center py-4 mt-5">
+    <div class="container"><p class="mb-0 small">© 2025 Unidad Educativa Particular "Francisca de las Llagas". Todos los derechos reservados.</p></div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
+
+    // Script para llenar dinámicamente los requisitos
+    document.addEventListener("DOMContentLoaded", function() {
+        const nuevosRequisitos = `
+            <ul class="list-unstyled">
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Ficha de Departamento de Consejería Estudiantil (DECE)</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Ficha del Departamento Médico</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Contrato de Prestación de Servicios</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>4 fotos tamaño carnet actualizadas a color con fondo blanco y con el uniforme</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Certificado de Bautizo</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Certificado médico general, auditivo y visual actualizado</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Matrículas y promociones legalizadas de años anteriores</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Notas legalizadas de participación estudiantil (si aplica)</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Extranjeros: Traer la resolución ministerial con notas</li>
+            </ul>`;
+
+        const antiguosRequisitos = `
+            <ul class="list-unstyled">
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Ficha de Departamento de Consejería Estudiantil (DECE)</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Ficha del Departamento Médico</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Contrato de Prestación de Servicios</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>4 fotos tamaño carnet actualizadas a color con fondo blanco y con el uniforme</li>
+                <li><i class="bi bi-check-circle-fill text-success me-2"></i>Certificado médico general, auditivo y visual actualizado</li>
+            </ul>`;
+            
+        document.querySelector("#pills-nuevos").innerHTML = nuevosRequisitos;
+        document.querySelector("#pills-antiguos").innerHTML = antiguosRequisitos;
+    });
+  </script>
+</body>
+</html>

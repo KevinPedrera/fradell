@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plataforma en Mantenimiento</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic" crossorigin>
+    <!-- Fuentes que coinciden con el estilo de tu sitio -->
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <style>
+        /* Estilos personalizados y animaciones */
+        :root {
+            /* Colores extraídos de tu sitio web */
+            --color-primario: #003366;
+            --color-secundario: #E0B252;
+            --color-fondo: #fdfdf5;
+        }
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: var(--color-fondo);
+            color: var(--color-primario);
+        }
+        h1 {
+            font-family: 'Merriweather', serif;
+        }
+
+        /* Animación de entrada sutil */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.95); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        
+        .content-animation {
+            animation: fadeIn 1.2s ease-out forwards;
+        }
+
+        /* Animación de giro lento para el engranaje */
+        @keyframes spin-slow {
+            from { transform: rotate(0deg); }
+            to { transform: rotate(360deg); }
+        }
+        .gear {
+            animation: spin-slow 30s linear infinite;
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Contenedor principal centrado -->
+    <div class="flex items-center justify-center min-h-screen p-6">
+        
+        <div class="text-center max-w-lg mx-auto content-animation">
+            
+            <!-- Animación SVG: Engranaje giratorio minimalista -->
+            <div class="relative w-24 h-24 mb-8 mx-auto">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" class="w-full h-full gear">
+                    <!-- Sombra sutil del engranaje -->
+                    <path d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z" fill="var(--color-primario)" opacity="0.1"/>
+                    <!-- Engranaje principal con colores del sitio -->
+                    <g transform="translate(-1, -1)">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke="var(--color-primario)" stroke-width="1.5" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke="var(--color-secundario)" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                    </g>
+                </svg>
+            </div>
+
+            <!-- Contenido de texto -->
+            <h1 class="text-4xl font-bold tracking-tight">
+                En Mantenimiento
+            </h1>
+            <p class="mt-4 text-lg text-gray-600">
+                Estamos realizando mejoras en esta plataforma. Agradecemos tu paciencia, por favor, inténtalo de nuevo más tarde.
+            </p>
+
+            <!-- BOTÓN PARA VOLVER A PLATAFORMAS -->
+            <a href="plataforma.html" class="mt-10 inline-flex items-center px-8 py-3 text-lg font-semibold text-[var(--color-primario)] bg-[var(--color-secundario)] rounded-lg transition-all duration-300 hover:bg-yellow-500 hover:shadow-lg hover:-translate-y-1">
+                <i class="bi bi-arrow-left-circle-fill me-2"></i>
+                Volver a Plataformas
+            </a>
+        </div>
+    </div>
+</body>
+</html>
