@@ -4,7 +4,6 @@
   position: relative;
   height: 65vh;
   background-image: url('../img/nav.jpeg');
-  background-attachment: fixed; /* Efecto Parallax */
 }
 .hero-section::before {
   content: '';
@@ -19,27 +18,14 @@
 }
 
 /* Tarjetas de Navegación */
-.card-link {
-    text-decoration: none;
-    color: inherit;
-}
-.card-hover {
-    border: 1px solid #eee;
-    transition: all 0.3s ease;
-    background-color: white;
-}
+.card-link { text-decoration: none; color: inherit; }
+.card-hover { border: 1px solid #eee; transition: all 0.3s ease; background-color: white; }
 .card-hover:hover {
   transform: translateY(-10px);
   box-shadow: 0 1rem 2rem rgba(0,0,0,0.1);
 }
-.card-hover:hover .icon-feature {
-    color: var(--color-secundario);
-}
-.icon-feature {
-    font-size: 3rem;
-    color: var(--color-primario);
-    transition: all 0.3s ease;
-}
+.card-hover:hover .icon-feature { color: var(--color-secundario); }
+.icon-feature { font-size: 3rem; color: var(--color-primario); transition: all 0.3s ease; }
 
 /* Testimonios */
 .testimonial-card {

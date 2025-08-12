@@ -22,6 +22,18 @@
     background-color: #fff3cd;
     border: 1px solid #ffeeba;
 }
+.dept-card {
+    background-color: white;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+    border-bottom: 4px solid var(--color-primario);
+    padding: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    height: 100%;
+}
+.dept-card:hover {
+    border-bottom-color: var(--color-secundario);
+}
 .dept-icon {
     font-size: 3rem;
     color: var(--color-primario);
@@ -32,7 +44,4 @@
     justify-content: center;
     background-color: #e7f1ff;
     border-radius: 50%;
-}
-.dept-card:hover {
-    border-bottom-color: var(--color-secundario);
 }

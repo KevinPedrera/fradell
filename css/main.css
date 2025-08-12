@@ -24,38 +24,16 @@ body {
 ================================================================= */
 
 /* --- Barra Superior --- */
-.top-bar-wrapper {
-    font-size: 0.85rem;
-}
-.top-bar-wrapper a {
-    color: white;
-    text-decoration: none;
-    transition: opacity 0.3s ease;
-}
+.top-bar-wrapper { font-size: 0.85rem; }
+.top-bar-wrapper a { color: white; text-decoration: none; transition: opacity 0.3s ease; }
 .top-bar-wrapper a:hover { opacity: 0.8; }
-.contact-info-wrapper {
-    background-color: var(--color-primario);
-    padding: 0.5rem 0;
-    flex-grow: 1;
-}
-.social-links-wrapper {
-    background-color: var(--color-secundario);
-    padding: 0.5rem 0;
-    min-width: 250px;
-    flex-shrink: 0;
-}
+.contact-info-wrapper { background-color: var(--color-primario); padding: 0.5rem 0; flex-grow: 1; }
+.social-links-wrapper { background-color: var(--color-secundario); padding: 0.5rem 0; min-width: 250px; flex-shrink: 0; }
 
 /* --- Navegación Principal --- */
-.navbar-brand .fw-bold {
-    font-family: 'Merriweather', serif;
-}
-.navbar .nav-link.active {
-    color: var(--color-secundario) !important;
-}
-.navbar-logo { 
-    height: 40px; /* Tamaño para escritorio y tablets */
-    transition: height 0.3s ease;
-}
+.navbar-brand .fw-bold { font-family: 'Merriweather', serif; }
+.navbar .nav-link.active { color: var(--color-secundario) !important; }
+.navbar-logo { height: 40px; transition: height 0.3s ease; }
 
 /* --- Encabezado de Página (General) --- */
 .page-header {
@@ -64,7 +42,7 @@ body {
   background-image: url('../img/nav.jpeg');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed; /* Efecto Parallax */
+  background-attachment: fixed; /* Efecto Parallax para ESCRITORIO */
 }
 .page-header::before {
   content: '';
@@ -102,18 +80,19 @@ body {
     color: #ffffff;
 }
 
-/* --- Clases de color para consistencia --- */
-.text-theme-secondary {
-    color: var(--color-secundario) !important;
+/* =================================================================
+   3. REGLAS DE RESPONSIVIDAD GLOBALES
+================================================================= */
+@media (max-width: 991px) {
+    /* CORRECCIÓN PARALLAX: Desactiva el efecto en tablets y móviles */
+    .page-header, .hero-section {
+        background-attachment: scroll;
+    }
 }
 
-
-/* =================================================================
-   3. MEDIA QUERIES Y RESPONSIVIDAD (NUEVA SECCIÓN)
-================================================================= */
 @media (max-width: 767px) {
-    /* Ajusta el logo en la barra de navegación para celulares */
+    /* CORRECCIÓN LOGO: Ajusta el logo en la barra de navegación para celulares */
     .navbar-logo {
-        height: 35px; /* Un tamaño más pequeño para móviles */
+        height: 35px;
     }
 }
