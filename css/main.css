@@ -26,7 +26,6 @@ body {
 /* --- Barra Superior --- */
 .top-bar-wrapper {
     font-size: 0.85rem;
-    width: 100%;
 }
 .top-bar-wrapper a {
     color: white;
@@ -53,7 +52,10 @@ body {
 .navbar .nav-link.active {
     color: var(--color-secundario) !important;
 }
-.navbar-logo { height: 40px; }
+.navbar-logo { 
+    height: 40px; /* Tamaño para escritorio y tablets */
+    transition: height 0.3s ease;
+}
 
 /* --- Encabezado de Página (General) --- */
 .page-header {
@@ -103,4 +105,15 @@ body {
 /* --- Clases de color para consistencia --- */
 .text-theme-secondary {
     color: var(--color-secundario) !important;
+}
+
+
+/* =================================================================
+   3. MEDIA QUERIES Y RESPONSIVIDAD (NUEVA SECCIÓN)
+================================================================= */
+@media (max-width: 767px) {
+    /* Ajusta el logo en la barra de navegación para celulares */
+    .navbar-logo {
+        height: 35px; /* Un tamaño más pequeño para móviles */
+    }
 }
