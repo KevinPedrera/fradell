@@ -1,81 +1,19 @@
 /* Estilos específicos para la página de Informativo */
 
-/* Encabezado de la página */
-.page-header {
-  position: relative;
-  height: 40vh;
-  background-image: url('../img/nav.jpeg');
-  background-size: cover;
-  background-position: center;
-}
-.page-header::before {
-  content: '';
-  position: absolute;
-  top: 0; left: 0; right: 0; bottom: 0;
-  background: rgba(0, 6, 12, 0.45);
-}
-.page-header .container {
-  position: relative;
-  z-index: 2;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Sección principal del anuncio de matrículas */
 .anuncio-matriculas {
   background-color: #ffffff;
   border: 1px solid #dee2e6;
 }
-
-/* Estilos para la tabla del cronograma */
-.table-bordered {
-    border: 1px solid #ddd;
-}
-.table-bordered th, .table-bordered td {
-    border: 1px solid #ddd;
-    vertical-align: middle;
-}
-.table-hover tbody tr:hover {
-    background-color: #f8f9fa;
-}
-.table-danger {
-    --bs-table-bg: #f8d7da;
-    --bs-table-color: #58151a;
-    --bs-table-border-color: #f1aeb5;
-    font-weight: bold;
-}
 .bg-primary {
     background-color: var(--color-primario) !important;
-}
-
-/* Pestañas para la sección de Requisitos */
-.nav-pills .nav-link {
-    background-color: #e9ecef;
-    color: var(--color-primario);
-    font-weight: 500;
-    margin: 0 5px;
 }
 .nav-pills .nav-link.active {
     background-color: var(--color-primario);
     color: white;
 }
 .tab-content .tab-pane {
-    background-color: #f8f9fa;
-    border-radius: 0.5rem;
-    border: 1px solid #dee2e6;
+    background-color: var(--color-fondo-claro);
 }
-.tab-content li {
-    padding: 0.5rem 0;
-    border-bottom: 1px solid #e9ecef;
-}
-.tab-content li:last-child {
-    border-bottom: none;
-}
-
-/* Tarjetas para Descargas y Avisos */
 .card-descargas {
     background-color: #e7f1ff;
     border: 1px solid #b3d1ff;
@@ -84,34 +22,10 @@
     background-color: #fff3cd;
     border: 1px solid #ffeeba;
 }
-.card-descargas .btn-primary {
-    background-color: var(--color-primario);
-    border-color: var(--color-primario);
-}
-.card-descargas .btn-primary:hover {
-    background-color: #002244;
-}
-
-/* Tarjetas para Departamentos de Apoyo */
-.dept-card {
-    background-color: white;
-    border-radius: 1rem;
-    transition: all 0.3s ease;
-    border-bottom: 4px solid var(--color-primario);
-    padding: 2rem;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    height: 100%;
-}
-.dept-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 1rem 2rem rgba(0,0,0,0.1);
-    border-bottom-color: var(--color-secundario);
-}
 .dept-icon {
     font-size: 3rem;
     color: var(--color-primario);
-    width: 80px;
-    height: 80px;
+    width: 80px; height: 80px;
     margin: 0 auto 1rem auto;
     display: flex;
     align-items: center;
@@ -119,19 +33,6 @@
     background-color: #e7f1ff;
     border-radius: 50%;
 }
-.dept-card h4 {
-    color: var(--color-primario);
-}
-.dept-card p {
-    color: #6c757d;
-    font-size: 0.9rem;
-}
-
-/* Sección de Documentos Generales */
-.card.shadow-sm {
-    border: 1px solid #eee;
-    background-color: white;
-}
-.display-3.text-danger {
-    color: #dc3545 !important;
+.dept-card:hover {
+    border-bottom-color: var(--color-secundario);
 }

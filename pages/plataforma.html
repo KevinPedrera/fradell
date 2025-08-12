@@ -4,30 +4,30 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Plataformas - Francisca de las Llagas</title>
-
-  <!-- Script de Configuración -->
   <script src="../js/config.js"></script>
-
-  <!-- Archivos de Estilos -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!-- CORRECCIÓN: Se añade el CSS común para heredar estilos -->
-  <link rel="stylesheet" href="../css/index.css" />
-  <link rel="stylesheet" href="../css/plataforma.css" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/plataforma.css" />
 </head>
 <body class="bg-beige-gradient">
 
-  <div class="top-bar d-none d-md-block">
-    <div class="container d-flex justify-content-between">
-      <div class="contact-info">
-        <a href="tel:022523664" class="me-3"><i class="bi bi-telephone-fill"></i> 02-2523664</a>
-        <a href="mailto:fradellsecretaria@gmail.com"><i class="bi bi-envelope-fill"></i> fradellsecretaria@gmail.com</a>
+  <div class="top-bar-wrapper d-none d-md-flex">
+    <div class="contact-info-wrapper">
+      <div class="container h-100 d-flex align-items-center">
+          <a href="mailto:fradellsecretaria@gmail.com" class="me-3"><i class="bi bi-envelope-fill"></i> fradellsecretaria@gmail.com</a>
+          <a href="tel:022523664"><i class="bi bi-telephone-fill"></i> 02-2523664</a>
       </div>
-      <div class="social-links">
-        <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
-        <a href="#"><i class="bi bi-instagram"></i></a>
-      </div>
+    </div>
+    <div class="social-links-wrapper">
+       <div class="container h-100 d-flex align-items-center justify-content-center">
+          <a href="#" class="mx-2 fs-5"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="mx-2 fs-5"><i class="bi bi-instagram"></i></a>
+       </div>
     </div>
   </div>
 
@@ -47,7 +47,6 @@
                 <li class="nav-item"><a class="nav-link" href="pastoral.html"><i class="bi bi-peace-fill me-2"></i>Pastoral</a></li>
                 <li class="nav-item"><a class="nav-link" href="vidaEstudiantil.html"><i class="bi bi-joystick me-2"></i>Vida Estudiantil</a></li>
                 <li class="nav-item"><a class="nav-link" href="informativo.html"><i class="bi bi-megaphone-fill me-2"></i>Informativo</a></li>
-                <!-- CORRECCIÓN: Se marca este enlace como 'active' -->
                 <li class="nav-item"><a class="nav-link active" href="plataforma.html"><i class="bi bi-laptop-fill me-2"></i>Plataforma</a></li>
             </ul>
         </div>
@@ -63,39 +62,34 @@
 
   <main class="container my-5">
 
-    <section class="py-5 platform-section" data-aos="fade-up">
-        <div class="row g-5 align-items-center">
-            <div class="col-lg-6">
-                <img src="../img/Moodle.png" class="img-fluid rounded shadow platform-image" alt="Aula Virtual Moodle">
-            </div>
-            <div class="col-lg-6">
-                <h2 class="fw-bold text-primary">Aula Virtual (Moodle)</h2>
-                <p class="lead text-muted">Accede a tus cursos, materiales de estudio, tareas, foros y todas las actividades académicas.</p>
-                <div class="d-grid gap-2 d-md-flex">
-                    <a href="#" onclick="checkExternalLink('aula_virtual', 'https://virtual.franciscadelasllagas.com/')" class="btn btn-primary btn-lg"><i class="bi bi-people-fill me-2"></i>Acceso Estudiantes</a>
-                    <a href="#" onclick="checkExternalLink('aula_virtual', 'https://virtual.franciscadelasllagas.com/')" class="btn btn-outline-primary btn-lg"><i class="bi bi-person-video3 me-2"></i>Acceso Docentes</a>
+    <div class="row g-5">
+        <div class="col-lg-6" data-aos="fade-up">
+            <div class="platform-card h-100">
+                <img src="../img/Moodle.png" class="platform-logo" alt="Logo Moodle">
+                <div class="card-body text-center">
+                    <h2 class="fw-bold text-primary">Aula Virtual</h2>
+                    <p class="lead text-muted">Accede a tus cursos, materiales de estudio, tareas y todas las actividades académicas.</p>
+                    <div class="d-grid gap-2 d-md-block mt-4">
+                        <a href="#" onclick="checkExternalLink('aula_virtual', 'https://virtual.franciscadelasllagas.com/')" class="btn btn-primary btn-lg"><i class="bi bi-people-fill me-2"></i>Acceso Estudiantes</a>
+                        <a href="#" onclick="checkExternalLink('aula_virtual', 'https://virtual.franciscadelasllagas.com/')" class="btn btn-outline-secondary btn-lg mt-2 mt-md-0"><i class="bi bi-person-video3 me-2"></i>Acceso Docentes</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-
-    <hr class="my-5">
-
-    <section class="py-5 platform-section" data-aos="fade-up">
-        <div class="row g-5 align-items-center flex-row-reverse">
-            <div class="col-lg-6">
-               <img src="../img/notas.png" class="img-fluid rounded shadow platform-image" alt="Sistema de Calificaciones">
-            </div>
-            <div class="col-lg-6">
-                <h2 class="fw-bold text-success">Sistema de Calificaciones</h2>
-                <p class="lead text-muted">Consulta tus notas, reportes de progreso y el seguimiento académico de tus representados.</p>
-                <div class="d-grid gap-2 d-md-flex">
-                    <a href="#" onclick="checkExternalLink('calificaciones', 'https://fradell.informatic.com.ec/solucion/login.zul')" class="btn btn-success btn-lg"><i class="bi bi-people-fill me-2"></i>Acceso Estudiantes</a>
-                    <a href="#" onclick="checkExternalLink('calificaciones', 'https://fradell.informatic.com.ec/solucion/login.zul')" class="btn btn-outline-success btn-lg"><i class="bi bi-person-video3 me-2"></i>Acceso Docentes</a>
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="platform-card h-100">
+                <img src="../img/notas.png" class="platform-logo" alt="Logo Sistema de Calificaciones">
+                <div class="card-body text-center">
+                    <h2 class="fw-bold text-primary">Sistema de Calificaciones</h2>
+                    <p class="lead text-muted">Consulta tus notas, reportes de progreso y el seguimiento académico de tus representados.</p>
+                    <div class="d-grid gap-2 d-md-block mt-4">
+                        <a href="#" onclick="checkExternalLink('calificaciones', 'https://fradell.informatic.com.ec/solucion/login.zul')" class="btn btn-primary btn-lg"><i class="bi bi-people-fill me-2"></i>Acceso Estudiantes</a>
+                        <a href="#" onclick="checkExternalLink('calificaciones', 'https://fradell.informatic.com.ec/solucion/login.zul')" class="btn btn-outline-secondary btn-lg mt-2 mt-md-0"><i class="bi bi-person-video3 me-2"></i>Acceso Docentes</a>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     
     <hr class="my-5">
 
@@ -110,7 +104,7 @@
                     <i class="bi bi-camera-video-fill"></i>
                     <h5 class="fw-bold mt-3">Ver Calificaciones</h5>
                     <p>Un video tutorial corto que te muestra paso a paso cómo revisar tus notas.</p>
-                    <a href="#" class="btn btn-sm btn-outline-primary">Ver Video</a>
+                    <a href="#" class="btn btn-sm btn-outline-primary mt-auto">Ver Video</a>
                 </div>
             </div>
             <div class="col-md-4">
@@ -118,14 +112,14 @@
                     <i class="bi bi-file-earmark-arrow-up-fill"></i>
                     <h5 class="fw-bold mt-3">Subir una Tarea</h5>
                     <p>Aprende a entregar tus deberes en el Aula Virtual con esta guía simple.</p>
-                    <a href="#" class="btn btn-sm btn-outline-primary">Ver Guía en PDF</a>
+                    <a href="#" class="btn btn-sm btn-outline-primary mt-auto">Ver Guía en PDF</a>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="guide-card text-center p-4">
                     <i class="bi bi-question-circle-fill"></i>
                     <h5 class="fw-bold mt-3">¿Necesitas Ayuda?</h5>
-                    <p>Para soporte o recuperación de contraseña, acércate a la secretaría del colegio.</p>
+                    <p>Para soporte técnico o recuperación de contraseña, por favor acércate a la secretaría del colegio.</p>
                 </div>
             </div>
         </div>

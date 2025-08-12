@@ -1,34 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Informativo - Francisca de las Llagas</title>
-
-  <!-- Archivos de Estilos -->
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Informativo - Francisca de las Llagas</title>
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!-- CORRECCIÓN: Se añade el CSS común para heredar estilos -->
-  <link rel="stylesheet" href="../css/index.css" />
-  <link rel="stylesheet" href="../css/informativo.css" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="css/index.css" />
 </head>
 <body class="bg-beige-gradient">
 
-  <div class="top-bar d-none d-md-block">
-    <div class="container d-flex justify-content-between">
-      <div class="contact-info">
-        <a href="tel:022523664" class="me-3"><i class="bi bi-telephone-fill"></i> 02-2523664</a>
-        <a href="mailto:fradellsecretaria@gmail.com"><i class="bi bi-envelope-fill"></i> fradellsecretaria@gmail.com</a>
-      </div>
-      <div class="social-links">
-        <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
-        <a href="#"><i class="bi bi-instagram"></i></a>
+<div class="top-bar-wrapper d-none d-md-flex">
+    <div class="contact-info-wrapper">
+      <div class="container h-100 d-flex align-items-center">
+          <a href="mailto:fradellsecretaria@gmail.com" class="me-3"><i class="bi bi-envelope-fill"></i> fradellsecretaria@gmail.com</a>
+          <a href="tel:022523664"><i class="bi bi-telephone-fill"></i> 02-2523664</a>
       </div>
     </div>
-  </div>
+    <div class="social-links-wrapper">
+       <div class="container h-100 d-flex align-items-center justify-content-center">
+          <a href="#" class="mx-2 fs-5"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="mx-2 fs-5"><i class="bi bi-instagram"></i></a>
+       </div>
+    </div>
+</div>
 
-  <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
     <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="../index.html">
             <img src="../img/logo1.png" alt="Logo Francisca de las Llagas" class="navbar-logo me-2">
@@ -43,22 +45,21 @@
                 <li class="nav-item"><a class="nav-link" href="institucion.html"><i class="bi bi-bank2 me-2"></i>Nuestra Institución</a></li>
                 <li class="nav-item"><a class="nav-link" href="pastoral.html"><i class="bi bi-peace-fill me-2"></i>Pastoral</a></li>
                 <li class="nav-item"><a class="nav-link" href="vidaEstudiantil.html"><i class="bi bi-joystick me-2"></i>Vida Estudiantil</a></li>
-                <!-- CORRECCIÓN: Se marca este enlace como 'active' -->
                 <li class="nav-item"><a class="nav-link active" href="informativo.html"><i class="bi bi-megaphone-fill me-2"></i>Informativo</a></li>
                 <li class="nav-item"><a class="nav-link" href="plataforma.html"><i class="bi bi-laptop-fill me-2"></i>Plataforma</a></li>
             </ul>
         </div>
     </div>
-  </nav>
+</nav>
 
-  <header class="page-header text-center text-white d-flex align-items-center justify-content-center">
+<header class="page-header text-center text-white d-flex align-items-center justify-content-center">
     <div class="container" data-aos="fade-in">
-      <h1 class="display-4 fw-bold">Informativo</h1>
-      <p class="lead">Anuncios, fechas importantes y recursos para nuestra comunidad.</p>
+    <h1 class="display-4 fw-bold">Informativo</h1>
+    <p class="lead">Anuncios, fechas importantes y recursos para nuestra comunidad.</p>
     </div>
-  </header>
+</header>
 
-  <main class="container my-5">
+<main class="container my-5">
 
     <section id="matriculas" class="anuncio-matriculas p-4 p-md-5 rounded-3 mb-5 shadow-lg" data-aos="fade-up">
         <div class="text-center mb-5">
@@ -95,16 +96,14 @@
             </ul>
             <div class="tab-content" id="pills-tabContent">
                 <div class="tab-pane fade show active p-4" id="pills-nuevos" role="tabpanel">
-                    <!-- Contenido se inyecta con JS -->
-                </div>
+                    </div>
                 <div class="tab-pane fade p-4" id="pills-antiguos" role="tabpanel">
-                    <!-- Contenido se inyecta con JS -->
-                </div>
+                    </div>
             </div>
         </div>
         
         <div class="mt-5" data-aos="fade-up" data-aos-delay="300">
-             <div class="row g-4">
+            <div class="row g-4">
                 <div class="col-lg-6">
                     <div class="card h-100 card-descargas">
                         <div class="card-body text-center d-flex flex-column justify-content-center">
@@ -129,6 +128,137 @@
         </div>
     </section>
     
+    <hr class="my-5">
+
+    <section id="lista-utiles" class="py-5" data-aos="fade-up">
+        <div class="text-center mb-5">
+            <h2 class="fw-bold text-primary"><i class="bi bi-card-list me-2"></i>Lista de Útiles Escolares 2025-2026</h2>
+            <p class="lead text-muted">Descarga la lista de útiles correspondiente a cada nivel.</p>
+        </div>
+        <div class="row g-3">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <h5 class="card-title mb-0">INICIAL 1</h5>
+                        <a href="#" class="btn btn-outline-primary">Descargar la lista de útiles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <h5 class="card-title mb-0">INICIAL 2</h5>
+                        <a href="#" class="btn btn-outline-primary">Descargar la lista de útiles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <h5 class="card-title mb-0">PRIMEROS EGB</h5>
+                        <a href="#" class="btn btn-outline-primary">Descargar la lista de útiles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <h5 class="card-title mb-0">SEGUNDOS EGB</h5>
+                        <a href="#" class="btn btn-outline-primary">Descargar la lista de útiles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <h5 class="card-title mb-0">TERCEROS EGB</h5>
+                        <a href="#" class="btn btn-outline-primary">Descargar la lista de útiles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <h5 class="card-title mb-0">CUARTOS EGB</h5>
+                        <a href="#" class="btn btn-outline-primary">Descargar la lista de útiles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <h5 class="card-title mb-0">QUINTOS EGB</h5>
+                        <a href="#" class="btn btn-outline-primary">Descargar la lista de útiles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <h5 class="card-title mb-0">SEXTOS EGB</h5>
+                        <a href="#" class="btn btn-outline-primary">Descargar la lista de útiles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <h5 class="card-title mb-0">SÉPTIMOS EGB</h5>
+                        <a href="#" class="btn btn-outline-primary">Descargar la lista de útiles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <h5 class="card-title mb-0">OCTAVOS BÁSICA SUPERIOR</h5>
+                        <a href="#" class="btn btn-outline-primary">Descargar la lista de útiles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <h5 class="card-title mb-0">NOVENOS BÁSICA SUPERIOR</h5>
+                        <a href="#" class="btn btn-outline-primary">Descargar la lista de útiles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <h5 class="card-title mb-0">DÉCIMOS BÁSICA SUPERIOR</h5>
+                        <a href="#" class="btn btn-outline-primary">Descargar la lista de útiles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <h5 class="card-title mb-0">PRIMEROS BACHILLERATO</h5>
+                        <a href="#" class="btn btn-outline-primary">Descargar la lista de útiles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <h5 class="card-title mb-0">SEGUNDOS BACHILLERATO</h5>
+                        <a href="#" class="btn btn-outline-primary">Descargar la lista de útiles</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-body d-flex justify-content-between align-items-center">
+                        <h5 class="card-title mb-0">TERCEROS BACHILLERATO</h5>
+                        <a href="#" class="btn btn-outline-primary">Descargar la lista de útiles</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <hr class="my-5">
 
     <section class="py-5" data-aos="fade-up">
@@ -180,15 +310,15 @@
         </div>
     </section>
 
-  </main>
+</main>
 
-  <footer class="footer-minimalista text-center py-4 mt-5">
+<footer class="footer-minimalista text-center py-4 mt-5">
     <div class="container"><p class="mb-0 small">© 2025 Unidad Educativa Particular "Francisca de las Llagas". Todos los derechos reservados.</p></div>
-  </footer>
+</footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
     AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
 
     // Script para llenar dinámicamente los requisitos
@@ -218,6 +348,6 @@
         document.querySelector("#pills-nuevos").innerHTML = nuevosRequisitos;
         document.querySelector("#pills-antiguos").innerHTML = antiguosRequisitos;
     });
-  </script>
+</script>
 </body>
 </html>

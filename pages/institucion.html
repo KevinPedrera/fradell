@@ -4,34 +4,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Nuestra Institución - Francisca de las Llagas</title>
-
-  <!-- Archivos de Estilos -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!-- CORRECCIÓN: Se añade el CSS común para heredar estilos -->
-  <link rel="stylesheet" href="../css/index.css" />
-  <link rel="stylesheet" href="../css/institucion.css" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/institucion.css" />
 </head>
 <body class="bg-beige-gradient">
 
-  <div class="top-bar d-none d-md-block">
-    <div class="container d-flex justify-content-between">
-      <div class="contact-info">
-        <a href="tel:022523664" class="me-3"><i class="bi bi-telephone-fill"></i> 02-2523664</a>
-        <a href="mailto:fradellsecretaria@gmail.com"><i class="bi bi-envelope-fill"></i> fradellsecretaria@gmail.com</a>
+  <div class="top-bar-wrapper d-none d-md-flex">
+    <div class="contact-info-wrapper">
+      <div class="container h-100 d-flex align-items-center">
+          <a href="mailto:fradellsecretaria@gmail.com" class="me-3"><i class="bi bi-envelope-fill"></i> fradellsecretaria@gmail.com</a>
+          <a href="tel:022523664"><i class="bi bi-telephone-fill"></i> 02-2523664</a>
       </div>
-      <div class="social-links">
-        <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
-        <a href="#"><i class="bi bi-instagram"></i></a>
-      </div>
+    </div>
+    <div class="social-links-wrapper">
+       <div class="container h-100 d-flex align-items-center justify-content-center">
+          <a href="#" class="mx-2 fs-5"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="mx-2 fs-5"><i class="bi bi-instagram"></i></a>
+       </div>
     </div>
   </div>
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light shadow-sm sticky-top">
     <div class="container">
       <a class="navbar-brand d-flex align-items-center" href="../index.html">
-          <!-- CORRECCIÓN: Se usa logo.png para consistencia -->
           <img src="../img/logo1.png" alt="Logo Francisca de las Llagas" class="navbar-logo me-2">
           <span class="fw-bold text-primary">Francisca de las Llagas</span>
       </a>
@@ -41,7 +42,6 @@
       <div class="collapse navbar-collapse" id="navbarMenu">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item"><a class="nav-link" href="../index.html"><i class="bi bi-house-door-fill me-2"></i>Inicio</a></li>
-          <!-- CORRECCIÓN: Se marca este enlace como 'active' -->
           <li class="nav-item"><a class="nav-link active" href="institucion.html"><i class="bi bi-bank2 me-2"></i>Nuestra Institución</a></li>
           <li class="nav-item"><a class="nav-link" href="pastoral.html"><i class="bi bi-peace-fill me-2"></i>Pastoral</a></li>
           <li class="nav-item"><a class="nav-link" href="vidaEstudiantil.html"><i class="bi bi-joystick me-2"></i>Vida Estudiantil</a></li>
@@ -64,36 +64,53 @@
     <section class="py-5" data-aos="fade-up">
         <div class="row g-5 align-items-center">
           <div class="col-lg-6">
-            <div class="card mission-vision-card text-white p-4 h-100">
-              <div class="card-body text-center">
-                <i class="bi bi-bullseye display-3 mb-3"></i>
-                <h2 class="card-title">Nuestra Misión</h2>
-                <p class="lead">Somos una institución católica franciscana que, con base en la pedagogía del amor y la reparación, educamos integralmente a la niñez y juventud en la fe, la ciencia y la cultura, para que sean agentes positivos de cambio en la sociedad.</p>
-              </div>
-            </div>
+            <img src="../img/mf.png" class="img-fluid rounded-3 shadow-lg" alt="Comunidad Franciscana">
           </div>
           <div class="col-lg-6">
-            <div class="card mission-vision-card vision-card text-white p-4 h-100">
-              <div class="card-body text-center">
-                <i class="bi bi-star-fill display-3 mb-3"></i>
-                <h2 class="card-title">Nuestra Visión</h2>
-                <p class="lead">Ser una institución de excelencia educativa, líder en la formación de ciudadanos cristianos, críticos y reflexivos, comprometidos con la justicia social y el cuidado de la Creación, adaptada a los nuevos desafíos tecnológicos y humanos.</p>
+            <h2 class="fw-bold text-primary mb-3">El Corazón de Nuestra Propuesta</h2>
+            <div class="mission-vision-box p-4 rounded-3">
+              <div class="mb-4">
+                <h4 class="fw-bold d-flex align-items-center"><i class="bi bi-bullseye fs-2 me-3 text-white"></i>Nuestra Misión</h4>
+                <p class="mb-0">Somos una institución católica franciscana que, con base en la pedagogía del amor y la reparación, educamos integralmente a la niñez y juventud en la fe, la ciencia y la cultura, para que sean agentes positivos de cambio en la sociedad.</p>
+              </div>
+              <hr class="border-light opacity-50">
+              <div class="mt-4">
+                <h4 class="fw-bold d-flex align-items-center"><i class="bi bi-star-fill fs-2 me-3 text-white"></i>Nuestra Visión</h4>
+                <p class="mb-0">Ser una institución de excelencia educativa, líder en la formación de ciudadanos cristianos, críticos y reflexivos, comprometidos con la justicia social y el cuidado de la Creación, adaptada a los nuevos desafíos tecnológicos y humanos.</p>
               </div>
             </div>
           </div>
         </div>
     </section>
     
-    <section class="py-5 bg-light rounded-3" data-aos="fade-up">
+    <section class="py-5 my-4 bg-light rounded-3" data-aos="fade-up">
         <div class="container">
             <div class="text-center mb-5">
                 <h2 class="fw-bold text-primary">Nuestros Valores Franciscanos</h2>
+                <p class="lead text-muted">Los pilares que guían nuestro quehacer diario.</p>
             </div>
             <div class="row g-4 text-center">
-                <div class="col-md-3 col-6"><div class="value-card p-3"><h5>Amor</h5></div></div>
-                <div class="col-md-3 col-6"><div class="value-card p-3"><h5>Servicio</h5></div></div>
-                <div class="col-md-3 col-6"><div class="value-card p-3"><h5>Reparación</h5></div></div>
-                <div class="col-md-3 col-6"><div class="value-card p-3"><h5>Alegría</h5></div></div>
+                <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="value-card h-100 p-4">
+                        <i class="bi bi-heart-fill"></i>
+                        <h5 class="fw-bold mt-3">Amor y Alegría</h5>
+                        <p class="small">Fomentamos un ambiente de fraternidad y gozo en el aprendizaje y la convivencia.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="value-card h-100 p-4">
+                        <i class="bi bi-shield-fill-check"></i>
+                        <h5 class="fw-bold mt-3">Servicio</h5>
+                        <p class="small">Educamos para la entrega generosa a los demás, especialmente a los más necesitados.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-6" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="value-card h-100 p-4">
+                        <i class="bi bi-recycle"></i>
+                        <h5 class="fw-bold mt-3">Reparación</h5>
+                        <p class="small">Promovemos la reconciliación, el perdón y el cuidado de la Creación como nuestra casa común.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -104,36 +121,28 @@
             <p class="lead text-muted">Un recorrido por nuestra historia desde 1968.</p>
         </div>
         <div class="timeline">
-          <div class="timeline-item" data-aos="fade-right">
-            <div class="timeline-img"></div>
+          <div class="timeline-item left" data-aos="fade-right">
             <div class="timeline-content">
-              <img class="timeline-content-img" src="../img/hermana-francisca.jpg" alt="Madre Francisca de las Llagas">
-              <h3>1968 - La Fundación</h3>
-              <p>Inspirada por un profundo amor, nuestra Sierva de Dios, Madre María Francisca de las Llagas, funda la Unidad Educativa para ser un faro de luz y educación en la comunidad.</p>
+              <h3 class="fw-bold">1968 - La Fundación</h3>
+              <p class="small text-muted">Inspirada por un profundo amor, nuestra Sierva de Dios, Madre María Francisca de las Llagas, funda la Unidad Educativa para ser un faro de luz y educación en la comunidad.</p>
             </div>
           </div>
-          <div class="timeline-item" data-aos="fade-left">
-            <div class="timeline-img"></div>
+          <div class="timeline-item right" data-aos="fade-left">
             <div class="timeline-content">
-              <img class="timeline-content-img" src="https://placehold.co/400x250/003366/FFFFFF?text=Primera+Promoción" alt="Primeros Alumnos">
-              <h3>1975 - Primera Promoción</h3>
-              <p>Nuestro colegio celebra con orgullo la graduación de sus primeros bachilleres, jóvenes formados con valores franciscanos y listos para servir a la sociedad.</p>
+              <h3 class="fw-bold">1975 - Primera Promoción</h3>
+              <p class="small text-muted">Nuestro colegio celebra con orgullo la graduación de sus primeros bachilleres, jóvenes formados con valores franciscanos y listos para servir a la sociedad.</p>
             </div>
           </div>
-          <div class="timeline-item" data-aos="fade-right">
-            <div class="timeline-img"></div>
+          <div class="timeline-item left" data-aos="fade-right">
             <div class="timeline-content">
-              <img class="timeline-content-img" src="https://placehold.co/400x250/FFC107/003366?text=Crecimiento" alt="Nuevas Instalaciones">
-              <h3>Años 90 - Crecimiento y Modernización</h3>
-              <p>Inauguramos nuevos pabellones y los primeros laboratorios de computación, adaptándonos a los nuevos tiempos sin perder nuestro carisma y cercanía.</p>
+              <h3 class="fw-bold">Años 90 - Crecimiento</h3>
+              <p class="small text-muted">Inauguramos nuevos pabellones y los primeros laboratorios de computación, adaptándonos a los nuevos tiempos sin perder nuestro carisma.</p>
             </div>
           </div>
-          <div class="timeline-item" data-aos="fade-left">
-            <div class="timeline-img"></div>
+          <div class="timeline-item right" data-aos="fade-left">
             <div class="timeline-content">
-              <img class="timeline-content-img" src="../img/nav.jpeg" alt="Colegio Hoy">
-              <h3>Hoy - Innovando en la Tradición</h3>
-              <p>Más de 50 años después, continuamos la misión, integrando la tecnología y nuevas metodologías pedagógicas para formar a los líderes del mañana con el mismo espíritu de servicio que nos vio nacer.</p>
+              <h3 class="fw-bold">Hoy - Innovando en la Tradición</h3>
+              <p class="small text-muted">Más de 50 años después, continuamos la misión, integrando tecnología y nuevas pedagogías para formar a los líderes del mañana con el mismo espíritu de servicio.</p>
             </div>
           </div>
         </div>
@@ -141,8 +150,9 @@
     
     <section class="py-5 bg-light rounded-3" data-aos="fade-up">
         <div class="container text-center">
-            <h2 class="fw-bold text-primary">Nuestro Código de Convivencia</h2>
-            <p class="lead text-muted my-4">Un pilar fundamental que guía el día a día de nuestra comunidad, fomentando el respeto y la armonía.</p>
+            <i class="bi bi-journal-richtext display-2 text-primary"></i>
+            <h2 class="fw-bold text-primary mt-3">Nuestro Código de Convivencia</h2>
+            <p class="lead text-muted my-4 mx-auto" style="max-width: 600px;">Un pilar fundamental que guía el día a día de nuestra comunidad, fomentando el respeto, la armonía y la responsabilidad compartida.</p>
             <a href="../docs/C_CONVIVENCIA-FRADELL.pdf" target="_blank" class="btn btn-primary btn-lg">
                 <i class="bi bi-download me-2"></i>Descargar Código
             </a>
@@ -158,7 +168,7 @@
             <div class="row g-0">
                 <div class="col-lg-6">
                     <div class="map-responsive">
-                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7947049637264!2d-78.51239552596026!3d-0.1971327354035872!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a48acab6b95%3A0x21116f4a4f3acf22!2sColegio%20Francisca%20de%20las%20Llagas!5e0!3m2!1ses!2sec!4v1754503025272!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> 
+                      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.794931338805!2d-78.504233!3d-0.197944!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a6a7c3b5c3b%3A0x8e5ea91e765a8e5!2sUnidad%20Educativa%20Particular%20Francisca%20de%20las%20Llagas!5e0!3m2!1ses!2sec!4v1692734271123!5m2!1ses!2sec" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
                 <div class="col-lg-6 d-flex align-items-center">

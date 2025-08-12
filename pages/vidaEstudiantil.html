@@ -4,27 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Vida Estudiantil - Francisca de las Llagas</title>
-
-  <!-- Archivos de Estilos -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!-- CORRECCIÓN: Se añade el CSS común para heredar estilos -->
-  <link rel="stylesheet" href="../css/index.css" />
-  <link rel="stylesheet" href="../css/vidaEstudiantil.css" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/vidaEstudiantil.css" />
 </head>
 <body class="bg-beige-gradient">
 
-  <div class="top-bar d-none d-md-block">
-    <div class="container d-flex justify-content-between">
-      <div class="contact-info">
-        <a href="tel:022523664" class="me-3"><i class="bi bi-telephone-fill"></i> 02-2523664</a>
-        <a href="mailto:fradellsecretaria@gmail.com"><i class="bi bi-envelope-fill"></i> fradellsecretaria@gmail.com</a>
+  <div class="top-bar-wrapper d-none d-md-flex">
+    <div class="contact-info-wrapper">
+      <div class="container h-100 d-flex align-items-center">
+          <a href="mailto:fradellsecretaria@gmail.com" class="me-3"><i class="bi bi-envelope-fill"></i> fradellsecretaria@gmail.com</a>
+          <a href="tel:022523664"><i class="bi bi-telephone-fill"></i> 02-2523664</a>
       </div>
-      <div class="social-links">
-        <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
-        <a href="#"><i class="bi bi-instagram"></i></a>
-      </div>
+    </div>
+    <div class="social-links-wrapper">
+       <div class="container h-100 d-flex align-items-center justify-content-center">
+          <a href="#" class="mx-2 fs-5"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="mx-2 fs-5"><i class="bi bi-instagram"></i></a>
+       </div>
     </div>
   </div>
 
@@ -53,113 +55,145 @@
   <header class="page-header text-center text-white d-flex align-items-center justify-content-center">
     <div class="container" data-aos="fade-in">
       <h1 class="display-4 fw-bold">Vida Estudiantil</h1>
-      <p class="lead">Descubre un mundo de actividades más allá del aula.</p>
+      <p class="lead">Formación integral que trasciende las aulas.</p>
     </div>
   </header>
 
   <main class="container my-5">
     
-    <!-- Grupos Representativos -->
-    <section class="py-5" data-aos="fade-up">
-        <h3 class="fw-bold text-center mb-5 section-title"><span>Grupos Representativos</span></h3>
-        <div class="row g-4 justify-content-center">
-            <div class="col-md-6 col-lg-4">
-                <div class="club-card">
-                    <div class="club-icon" style="background-color: #e2d9f3;"><i class="bi bi-soundwave" style="color: #6f42c1;"></i></div>
-                    <h5 class="fw-bold mt-3">Banda de Paz</h5>
-                    <p class="text-muted">Disciplina, música y orgullo institucional. Nuestra banda de paz nos representa con gallardía en desfiles y eventos cívicos.</p>
-                </div>
+    <section class="py-5 text-center" data-aos="fade-up">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <i class="bi bi-person-fill-check display-2 text-primary"></i>
+          <h2 class="fw-bold text-primary mt-3">Gobierno Estudiantil</h2>
+          <p class="lead text-muted">
+            El Consejo Estudiantil es el máximo organismo de representación de nuestros alumnos. Elegido democráticamente, su misión es ser la voz de sus compañeros, promoviendo la identidad, el compromiso y la participación activa en la vida institucional.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 bg-light rounded-3" data-aos="fade-up">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-primary">Nuestros Espacios de Encuentro</h2>
+                <p class="text-muted">Lugares diseñados para el deporte, la cultura y la convivencia diaria.</p>
             </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="club-card">
-                    <div class="club-icon" style="background-color: #f8d7da;"><i class="bi bi-person-arms-up text-danger"></i></div>
-                    <h5 class="fw-bold mt-3">Club de Danza</h5>
-                    <p class="text-muted">Expresa tu pasión por el movimiento y representa la riqueza cultural a través de la danza folclórica y moderna.</p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="space-card">
+                        <img src="../img/nav.jpeg" class="card-img-top" alt="Canchas Deportivas">
+                        <div class="card-body">
+                            <h5 class="fw-bold">Canchas Deportivas</h5>
+                            <p>Para fútbol y básquet, donde se fomenta la vida sana y el juego limpio.</p>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="club-card">
-                    <div class="club-icon" style="background-color: #cff4fc;"><i class="bi bi-star-fill text-info"></i></div>
-                    <h5 class="fw-bold mt-3">Cheerleaders</h5>
-                    <p class="text-muted">Energía, acrobacia y trabajo en equipo. Anima a nuestros equipos deportivos y compite llevando el espíritu del colegio a lo más alto.</p>
+                <div class="col-md-6 col-lg-3">
+                    <div class="space-card">
+                        <img src="https://placehold.co/600x400/003366/FFFFFF?text=Coliseo" class="card-img-top" alt="Coliseo">
+                        <div class="card-body">
+                            <h5 class="fw-bold">Coliseo</h5>
+                            <p>El corazón de nuestros eventos, donde se realizan programas y encuentros deportivos.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="space-card">
+                        <img src="https://placehold.co/600x400/198754/FFFFFF?text=Piscina" class="card-img-top" alt="Piscina">
+                        <div class="card-body">
+                            <h5 class="fw-bold">Piscina</h5>
+                            <p>Un espacio para el desarrollo de habilidades acuáticas y la recreación de los estudiantes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="space-card">
+                        <img src="https://placehold.co/600x400/E0B252/000000?text=Bar" class="card-img-top" alt="Bar Estudiantil">
+                        <div class="card-body">
+                            <h5 class="fw-bold">Bar Estudiantil</h5>
+                            <p>Un punto de encuentro para que nuestros estudiantes socialicen y recarguen energías.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Clubes y Competencias Académicas -->
     <section class="py-5" data-aos="fade-up">
-        <h3 class="fw-bold text-center mb-5 section-title"><span>Clubes y Competencias Académicas</span></h3>
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-3">
-                <div class="club-card">
-                    <div class="club-icon" style="background-color: #e7f1ff;"><i class="bi bi-robot text-primary"></i></div>
-                    <h5 class="fw-bold mt-3">Club de Robótica</h5>
-                    <p class="text-muted">Diseña, construye y programa robots para competir y resolver desafíos del mundo real.</p>
-                </div>
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-primary">Laboratorios: Aprendizaje Activo</h2>
+                <p class="text-muted">Equipados para que nuestros estudiantes experimenten, creen e innoven.</p>
             </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="club-card">
-                    <div class="club-icon" style="background-color: #fff3cd;"><i class="bi bi-calculator-fill text-warning"></i></div>
-                    <h5 class="fw-bold mt-3">Matemáticas</h5>
-                    <p class="text-muted">Prepárate para competencias, resolviendo problemas complejos y agudizando tu ingenio.</p>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="lab-card">
+                        <div class="lab-icon"><i class="bi bi-eyedropper"></i></div>
+                        <h5 class="fw-bold">Ciencias y Química</h5>
+                        <p>Para la experimentación segura, donde la curiosidad científica cobra vida.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="club-card">
-                    <div class="club-icon" style="background-color: #d1e7dd;"><i class="bi bi-journal-bookmark-fill text-success"></i></div>
-                    <h5 class="fw-bold mt-3">Lengua y Literatura</h5>
-                    <p class="text-muted">Participa en certámenes de oratoria, declamación y literatura, desarrollando tus habilidades.</p>
+                <div class="col-md-6 col-lg-3">
+                    <div class="lab-card">
+                        <div class="lab-icon"><i class="bi bi-robot"></i></div>
+                        <h5 class="fw-bold">Informática y Robótica</h5>
+                        <p>Para desarrollar el pensamiento computacional y crear con tecnología.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <div class="club-card">
-                    <div class="club-icon" style="background-color: #e9ecef;"><i class="bi bi-puzzle-fill text-secondary"></i></div>
-                    <h5 class="fw-bold mt-3">Concurso de Ajedrez</h5>
-                    <p class="text-muted">Desarrolla tu estrategia y compite en torneos que ponen a prueba tu concentración y táctica.</p>
+                <div class="col-md-6 col-lg-3">
+                    <div class="lab-card">
+                        <div class="lab-icon"><i class="bi bi-translate"></i></div>
+                        <h5 class="fw-bold">Inglés</h5>
+                        <p>Para fomentar la fluidez y confianza en un segundo idioma con herramientas interactivas.</p>
+                    </div>
+                </div>
+                 <div class="col-md-6 col-lg-3">
+                    <div class="lab-card">
+                        <div class="lab-icon"><i class="bi bi-globe-americas"></i></div>
+                        <h5 class="fw-bold">Ciencias Sociales</h5>
+                        <p>Para el debate, la investigación y la comprensión de nuestro entorno social.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- GALERÍA DE EVENTOS -->
-    <section class="py-5" data-aos="fade-up">
-        <h3 class="fw-bold text-center mb-5 section-title"><span>Eventos y Celebraciones</span></h3>
-        <div class="row g-4">
-            <div class="col-md-6 col-lg-4">
-                <div class="gallery-card">
-                    <img src="https://placehold.co/600x400/dc3545/ffffff?text=Navidad" alt="Celebración de Navidad">
-                    <div class="gallery-overlay"><h5>Navidad</h5></div>
-                </div>
+
+    <section class="py-5 bg-light rounded-3" data-aos="fade-up">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="fw-bold text-primary">Clubes y Actividades Extracurriculares</h2>
+                <p class="text-muted">Descubre tus pasiones y desarrolla tus talentos en nuestros grupos representativos.</p>
             </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="gallery-card">
-                    <img src="https://placehold.co/600x400/0dcaf0/ffffff?text=Día+del+Niño" alt="Día del Niño">
-                    <div class="gallery-overlay"><h5>Día del Niño</h5></div>
+            <div class="row g-4">
+                 <div class="col-md-6 col-lg-4">
+                    <div class="activity-card">
+                        <div class="activity-icon"><i class="bi bi-soundwave"></i></div>
+                        <h5 class="fw-bold">Banda de Paz</h5>
+                        <p>Representa al colegio con orgullo, disciplina y talento musical en eventos cívicos.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6 col-lg-4">
-                <div class="gallery-card">
-                    <img src="https://placehold.co/600x400/ffc107/000000?text=Fiestas+Patronales" alt="Fiestas Patronales">
-                    <div class="gallery-overlay"><h5>Fiestas Patronales</h5></div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="activity-card">
+                        <div class="activity-icon"><i class="bi bi-person-arms-up"></i></div>
+                        <h5 class="fw-bold">Club de Danza</h5>
+                        <p>Explora la riqueza de nuestras tradiciones a través del movimiento y el folclore.</p>
+                    </div>
                 </div>
-            </div>
-             <div class="col-md-6 col-lg-4">
-                <div class="gallery-card">
-                    <img src="https://placehold.co/600x400/0d6efd/ffffff?text=Juramento+Bandera" alt="Juramento a la Bandera">
-                    <div class="gallery-overlay"><h5>Juramento a la Bandera</h5></div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="activity-card">
+                        <div class="activity-icon"><i class="bi bi-flag-fill"></i></div>
+                        <h5 class="fw-bold">Bastoneras</h5>
+                        <p>Fomenta el espíritu de equipo y la coordinación en presentaciones y desfiles.</p>
+                    </div>
                 </div>
-            </div>
-             <div class="col-md-6 col-lg-4">
-                <div class="gallery-card">
-                    <img src="https://placehold.co/600x400/198754/ffffff?text=Día+de+la+Familia" alt="Día de la Familia">
-                    <div class="gallery-overlay"><h5>Día de la Familia</h5></div>
-                </div>
-            </div>
-             <div class="col-md-6 col-lg-4">
-                <div class="gallery-card">
-                    <img src="https://placehold.co/600x400/6f42c1/ffffff?text=Semana+Cultural" alt="Semana Cultural">
-                    <div class="gallery-overlay"><h5>Semana Cultural</h5></div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="activity-card">
+                        <div class="activity-icon"><i class="bi bi-trophy-fill"></i></div>
+                        <h5 class="fw-bold">Concursos Académicos</h5>
+                        <p>Pon a prueba tus conocimientos en Matemáticas, Inglés y Lenguaje en competencias intercolegiales.</p>
+                    </div>
                 </div>
             </div>
         </div>

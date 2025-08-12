@@ -2,29 +2,31 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="viewport" content="width=device-width, initial-scale-1" />
   <title>Pastoral - Francisca de las Llagas</title>
-
-  <!-- Archivos de Estilos -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <!-- CORRECCIÓN: Se añade el CSS común para heredar estilos -->
-  <link rel="stylesheet" href="../css/index.css" />
-  <link rel="stylesheet" href="../css/pastoral.css" />
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="/css/pastoral.css" />  
 </head>
 <body class="bg-beige-gradient">
 
-  <div class="top-bar d-none d-md-block">
-    <div class="container d-flex justify-content-between">
-      <div class="contact-info">
-        <a href="tel:022523664" class="me-3"><i class="bi bi-telephone-fill"></i> 02-2523664</a>
-        <a href="mailto:fradellsecretaria@gmail.com"><i class="bi bi-envelope-fill"></i> fradellsecretaria@gmail.com</a>
+  <div class="top-bar-wrapper d-none d-md-flex">
+    <div class="contact-info-wrapper">
+      <div class="container h-100 d-flex align-items-center">
+          <a href="mailto:fradellsecretaria@gmail.com" class="me-3"><i class="bi bi-envelope-fill"></i> fradellsecretaria@gmail.com</a>
+          <a href="tel:022523664"><i class="bi bi-telephone-fill"></i> 02-2523664</a>
       </div>
-      <div class="social-links">
-        <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
-        <a href="#"><i class="bi bi-instagram"></i></a>
-      </div>
+    </div>
+    <div class="social-links-wrapper">
+       <div class="container h-100 d-flex align-items-center justify-content-center">
+          <a href="#" class="mx-2 fs-5"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="mx-2 fs-5"><i class="bi bi-instagram"></i></a>
+       </div>
     </div>
   </div>
 
@@ -41,7 +43,6 @@
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                 <li class="nav-item"><a class="nav-link" href="../index.html"><i class="bi bi-house-door-fill me-2"></i>Inicio</a></li>
                 <li class="nav-item"><a class="nav-link" href="institucion.html"><i class="bi bi-bank2 me-2"></i>Nuestra Institución</a></li>
-                <!-- CORRECCIÓN: Se marca este enlace como 'active' -->
                 <li class="nav-item"><a class="nav-link active" href="pastoral.html"><i class="bi bi-peace-fill me-2"></i>Pastoral</a></li>
                 <li class="nav-item"><a class="nav-link" href="vidaEstudiantil.html"><i class="bi bi-joystick me-2"></i>Vida Estudiantil</a></li>
                 <li class="nav-item"><a class="nav-link" href="informativo.html"><i class="bi bi-megaphone-fill me-2"></i>Informativo</a></li>
@@ -54,109 +55,73 @@
   <header class="page-header text-center text-white d-flex align-items-center justify-content-center">
     <div class="container" data-aos="fade-in">
       <h1 class="display-4 fw-bold">Pastoral</h1>
-      <p class="lead">Formando corazones para amar, reparar y servir.</p>
+      <p class="lead">El alma de nuestra comunidad, guiada por el lema "Educar, Amar y Servir".</p>
     </div>
   </header>
 
   <main class="container my-5">
 
-    <section class="text-center py-5" data-aos="fade-up">
-        <h2 class="fw-bold text-primary">El Corazón de Nuestra Misión Educativa</h2>
-        <p class="lead text-muted mx-auto" style="max-width: 800px;">
-            Nuestra pastoral busca iluminar toda la vida escolar con la luz del Evangelio, inspirados en la sencillez de San Francisco de Asís y el carisma reparador de nuestra Sierva de Dios, Madre María Francisca de las Llagas.
-        </p>
-    </section>
-    
-    <section class="values-section py-5 my-5" data-aos="fade-up">
-        <div class="container">
-            <div class="text-center mb-5">
-                <h2 class="fw-bold text-white">Nuestros Valores Franciscanos</h2>
-                <p class="lead text-white-50">Los pilares que guían nuestro caminar diario.</p>
-            </div>
-            <div class="row g-4 justify-content-center">
-                <div class="col-lg-2 col-md-4 col-4" data-aos="zoom-in" data-aos-delay="100"><div class="value-card"><i class="bi bi-heart-fill"></i><span>Amor</span></div></div>
-                <div class="col-lg-2 col-md-4 col-4" data-aos="zoom-in" data-aos-delay="200"><div class="value-card"><i class="bi bi-brightness-high-fill"></i><span>Alegría</span></div></div>
-                <div class="col-lg-2 col-md-4 col-4" data-aos="zoom-in" data-aos-delay="300"><div class="value-card"><i class="bi bi-peace-fill"></i><span>Paz y Bien</span></div></div>
-                <div class="col-lg-2 col-md-4 col-4" data-aos="zoom-in" data-aos-delay="400"><div class="value-card"><i class="bi bi-shield-fill-check"></i><span>Servicio</span></div></div>
-                <div class="col-lg-2 col-md-4 col-4" data-aos="zoom-in" data-aos-delay="500"><div class="value-card"><i class="bi bi-recycle"></i><span>Reparación</span></div></div>
+    <section class="py-5 text-center" data-aos="fade-up">
+        <div class="row justify-content-center">
+            <div class="col-lg-9">
+                <h2 class="fw-bold text-primary">En el Corazón de Nuestra Propuesta Educativa</h2>
+                <p class="lead text-muted">
+                    La Pastoral es el eje que da vida a nuestro proyecto educativo. No es una materia más, sino la luz que ilumina todo lo que hacemos. Inspirados en la fe católica y el carisma franciscano, buscamos formar no solo excelentes estudiantes, sino también personas íntegras, con un corazón sensible y un espíritu dispuesto a transformar el mundo.
+                </p>
             </div>
         </div>
     </section>
 
-    <section class="py-5" data-aos="fade-up">
-        <div class="text-center mb-5">
-            <h2 class="fw-bold text-primary">Nuestros Ejes de Acción</h2>
-        </div>
-        <div class="row g-4">
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-                <div class="eje-card" style="background-image: url('https://placehold.co/600x400/003366/FFFFFF?text=Sacramentos');">
-                    <div class="eje-card-overlay">
-                        <h4 class="fw-bold">Sacramentos y Liturgia</h4>
-                        <p>Preparación para Primera Comunión, Confirmación y celebraciones que nutren nuestra fe.</p>
-                    </div>
-                </div>
+    <section class="py-5">
+        <div class="row align-items-center mb-5" data-aos="fade-left">
+            <div class="col-lg-6">
+                <img src="https://placehold.co/800x600/003366/FFFFFF?text=Formación" class="img-fluid rounded-3 shadow-lg" alt="Educar en la Fe">
             </div>
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-                <div class="eje-card" style="background-image: url('https://placehold.co/600x400/FFC107/003366?text=Convivencias');">
-                    <div class="eje-card-overlay">
-                        <h4 class="fw-bold">Convivencias y Retiros</h4>
-                        <p>Espacios de reflexión y encuentro con Dios y con uno mismo, adaptados para cada edad.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-                <div class="eje-card" style="background-image: url('https://placehold.co/600x400/28A745/FFFFFF?text=Acción+Social');">
-                    <div class="eje-card-overlay">
-                        <h4 class="fw-bold">Acción Social y Misiones</h4>
-                        <p>Proyectos de voluntariado que nos invitan a servir a los más necesitados y a cuidar la Creación.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-                <div class="eje-card" style="background-image: url('https://placehold.co/600x400/6C757D/FFFFFF?text=Acompañamiento');">
-                    <div class="eje-card-overlay">
-                        <h4 class="fw-bold">Acompañamiento Espiritual</h4>
-                        <p>Un equipo pastoral cercano para escuchar, guiar y apoyar a estudiantes y familias en su camino.</p>
-                    </div>
-                </div>
+            <div class="col-lg-6 ps-lg-5 mt-4 mt-lg-0">
+                <h3 class="display-6 fw-bold text-primary">Educar en la Fe</h3>
+                <p class="text-muted">Nuestra misión es educar integralmente, uniendo la ciencia, la cultura y la fe. La formación religiosa prepara a los estudiantes para los sacramentos y les brinda herramientas para ser ciudadanos críticos, reflexivos y comprometidos con la justicia social.</p>
+                <div class="d-flex align-items-center mt-3"><i class="bi bi-check-circle-fill text-primary me-2"></i><span>Preparación para Primera Comunión y Confirmación.</span></div>
+                <div class="d-flex align-items-center mt-2"><i class="bi bi-check-circle-fill text-primary me-2"></i><span>Acompañamiento para el Bautizo.</span></div>
             </div>
         </div>
-    </section>
-    
-    <section class="py-5 my-5" data-aos="fade-up">
-        <div class="card shadow-lg border-0 overflow-hidden">
-            <div class="row g-0">
-                <div class="col-md-6">
-                    <img src="https://placehold.co/800x600/003366/FFFFFF?text=Capilla+del+Colegio" class="img-fluid object-fit-cover h-100" alt="Capilla del Colegio">
-                </div>
-                <div class="col-md-6 d-flex align-items-center">
-                    <div class="card-body p-5">
-                        <h2 class="card-title fw-bold text-primary">Misa Dominical en Comunidad</h2>
-                        <p class="card-text lead">Extendemos una cordial invitación a todos nuestros estudiantes, padres de familia, y personal a compartir la alegría de la Eucaristía.</p>
-                        <div class="d-flex align-items-center mt-4 p-3 rounded" style="background-color: #e7f1ff;">
-                            <i class="bi bi-clock-fill display-4 me-3 text-primary"></i>
-                            <div>
-                                <h5 class="mb-0 fw-bold">Todos los domingos</h5>
-                                <span class="fs-5">10:00 AM</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+        <div class="row align-items-center mb-5" data-aos="fade-right">
+            <div class="col-lg-6 order-lg-2">
+                <img src="https://placehold.co/800x600/FFC107/003366?text=Comunidad" class="img-fluid rounded-3 shadow-lg" alt="Amar en Comunidad">
+            </div>
+            <div class="col-lg-6 pe-lg-5 mt-4 mt-lg-0 order-lg-1">
+                <h3 class="display-6 fw-bold text-primary">Amar en Comunidad</h3>
+                <p class="text-muted">Vivimos la "pedagogía del amor" en un ambiente de fraternidad y convivencia armónica. Fomentamos el respeto y la acogida, ofreciendo acompañamiento espiritual y emocional a través del equipo pastoral y el DECE para cuidar de cada estudiante.</p>
+                <div class="d-flex align-items-center mt-3"><i class="bi bi-check-circle-fill text-primary me-2"></i><span>Retiros y convivencias.</span></div>
+                <div class="d-flex align-items-center mt-2"><i class="bi bi-check-circle-fill text-primary me-2"></i><span>Grupos pastorales como "Marianitos Fradell".</span></div>
+            </div>
+        </div>
+
+        <div class="row align-items-center" data-aos="fade-left">
+            <div class="col-lg-6">
+                <img src="../img/hermanas.jpeg" class="img-fluid rounded-3 shadow-lg" alt="Servir al Prójimo">
+            </div>
+            <div class="col-lg-6 ps-lg-5 mt-4 mt-lg-0">
+                <h3 class="display-6 fw-bold text-primary">Servir al Prójimo</h3>
+                <p class="text-muted">La fe se demuestra con obras. Motivamos a nuestros estudiantes a desarrollar una vocación de servicio, participando en misiones y proyectos de acción social que nos invitan a atender a los más necesitados y a cuidar nuestra casa común.</p>
+                <div class="d-flex align-items-center mt-3"><i class="bi bi-check-circle-fill text-primary me-2"></i><span>Proyectos de voluntariado y Acción Social.</span></div>
+                <div class="d-flex align-items-center mt-2"><i class="bi bi-check-circle-fill text-primary me-2"></i><span>Misiones de ayuda comunitaria.</span></div>
             </div>
         </div>
     </section>
 
-    <section class="py-5" data-aos="fade-up">
-        <div class="text-center mb-5">
-            <h2 class="fw-bold text-primary">Momentos que Dejan Huella</h2>
-        </div>
-        <div class="row g-3">
-            <div class="col-lg-4 col-md-6" data-aos="zoom-in"><img src="https://placehold.co/600x400/003366/FFFFFF?text=Misa+Colegial" class="img-fluid gallery-img" alt="Misa Colegial"></div>
-            <div class="col-lg-4 col-md-6" data-aos="zoom-in"><img src="https://placehold.co/600x400/FFC107/003366?text=Convivencia" class="img-fluid gallery-img" alt="Convivencia Estudiantil"></div>
-            <div class="col-lg-4 col-md-6" data-aos="zoom-in"><img src="https://placehold.co/600x400/28A745/FFFFFF?text=Acción+Social" class="img-fluid gallery-img" alt="Acción Social"></div>
-            <div class="col-lg-4 col-md-6" data-aos="zoom-in"><img src="https://placehold.co/600x400/6f42c1/FFFFFF?text=Grupo+Juvenil" class="img-fluid gallery-img" alt="Grupo Juvenil"></div>
-            <div class="col-lg-4 col-md-6" data-aos="zoom-in"><img src="https://placehold.co/600x400/dc3545/FFFFFF?text=Misiones" class="img-fluid gallery-img" alt="Misiones"></div>
-            <div class="col-lg-4 col-md-6" data-aos="zoom-in"><img src="https://placehold.co/600x400/198754/FFFFFF?text=Celebración" class="img-fluid gallery-img" alt="Celebración Mariana"></div>
+    <section class="py-5" data-aos="zoom-in-up">
+        <div class="mass-invitation-card">
+            <div class="mass-icon"><i class="bi bi-church"></i></div>
+            <h2 class="text-white fw-bold">Misa Dominical en Comunidad</h2>
+            <p class="lead text-white-50">Extendemos una cordial invitación a todos los estudiantes, padres de familia y personal a compartir la alegría de la Eucaristía en la capilla de nuestra institución.</p>
+            <div class="mass-time-box">
+                <i class="bi bi-clock-fill"></i>
+                <div>
+                    <h5 class="mb-0 fw-bold">Todos los Domingos</h5>
+                    <span>10:00 AM</span>
+                </div>
+            </div>
         </div>
     </section>
 

@@ -1,98 +1,27 @@
-:root {
-  --color-primario: #003366;
-  --color-secundario: #E0B252;
-}
+/* Estilos específicos para la página de Inicio */
 
-/* Fondo con degradado radial sutil */
-.bg-beige-gradient {
-    background-color: #fdfdf5; /* Color de fondo base si el degradado no carga */
-    background-image:
-        radial-gradient(circle at 1% 1%, rgba(224,178,82,0.1) 0%, transparent 30%),
-        radial-gradient(circle at 99% 99%, rgba(224,178,82,0.1) 0%, transparent 30%);
-}
-
-
-/* --- Componentes Comunes --- */
-.top-bar {
-    background-color: var(--color-primario);
-    padding: 0.5rem 0;
-    font-size: 0.85rem;
-}
-.top-bar a {
-    color: white;
-    text-decoration: none;
-    transition: opacity 0.3s ease;
-}
-.top-bar a:hover {
-    opacity: 0.8;
-}
-.footer-minimalista {
-    background-color: #222;
-    color: #aaa;
-}
-
-/* --- Menú de Navegación con Iconos --- */
-/* CORRECCIÓN: Se ajusta el tamaño de fuente y el padding para acomodar títulos largos */
-.navbar .nav-link {
-    display: flex;
-    align-items: center;
-    font-weight: 500;
-    font-size: 0.9rem; /* Se reduce ligeramente el tamaño de la fuente */
-    padding: 0.5rem 0.6rem !important; /* Se ajusta el espaciado horizontal */
-    white-space: nowrap; /* Evita que el texto del enlace se divida en dos líneas */
-}
-.navbar .nav-link.active {
-    color: var(--color-secundario) !important;
-}
-.navbar-logo {
-    height: 40px; /* Ajusta el tamaño del logo en la barra de navegación */
-}
-
-/* --- Hero Section y Animaciones de Texto --- */
 .hero-section {
   position: relative;
   height: 65vh;
   background-image: url('../img/nav.jpeg');
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  background-attachment: fixed; /* Efecto Parallax */
 }
 .hero-section::before {
   content: '';
   position: absolute;
   top: 0; left: 0; right: 0; bottom: 0;
   background: rgba(0, 6, 12, 0.5);
+  z-index: 1;
 }
 .hero-content {
-    position: relative;
     z-index: 2;
+    position: relative;
 }
 
-@keyframes fadeInUp {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-.animated-title {
-    animation: fadeInUp 1s ease-out forwards;
-}
-.animated-subtitle {
-    opacity: 0;
-    animation: fadeInUp 1s ease-out 0.5s forwards;
-}
-.animated-button {
-    opacity: 0;
-    animation: fadeInUp 1s ease-out 1s forwards;
-}
-
-/* --- Tarjetas de Navegación --- */
+/* Tarjetas de Navegación */
 .card-link {
     text-decoration: none;
     color: inherit;
-}
-.icon-feature {
-    font-size: 3rem;
-    color: var(--color-primario);
-    transition: all 0.3s ease;
 }
 .card-hover {
     border: 1px solid #eee;
@@ -106,61 +35,17 @@
 .card-hover:hover .icon-feature {
     color: var(--color-secundario);
 }
-
-/* --- Sección CTA --- */
-.cta-section {
-    background-color: var(--color-primario);
-}
-.cta-section .btn-light:hover {
-    transform: scale(1.05);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+.icon-feature {
+    font-size: 3rem;
+    color: var(--color-primario);
+    transition: all 0.3s ease;
 }
 
-/* --- Sección de Video --- */
-.video-section .ratio {
-    max-width: 800px; /* Limita el ancho máximo del video */
-    margin: 0 auto; /* Centra el video horizontalmente */
-}
-
-/* --- Carrusel de Testimonios con Iconos --- */
-.testimonials-section {
-    background-color: transparent;
-}
+/* Testimonios */
 .testimonial-card {
     background-color: white;
     padding: 2rem;
     border-radius: 1rem;
     border-left: 5px solid var(--color-secundario);
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
-    text-align: center;
-    margin: 0 auto;
-    max-width: 600px;
-}
-.testimonial-icon {
-    font-size: 4rem;
-    color: var(--color-primario);
-    margin-bottom: 1rem;
-    display: block;
-}
-.testimonial-text {
-    font-style: italic;
-    font-size: 1.1rem;
-    color: #555;
-    margin-bottom: 1.5rem;
-}
-.testimonial-author .author-name {
-    display: block;
-    font-weight: bold;
-    color: var(--color-primario);
-}
-.testimonial-author .author-role {
-    font-size: 0.9rem;
-    color: #777;
-}
-
-/* Controles del Carrusel */
-.carousel-control-prev-icon, .carousel-control-next-icon {
-    background-color: var(--color-primario);
-    border-radius: 50%;
-    padding: 1.5rem;
 }

@@ -1,0 +1,106 @@
+/* =================================================================
+   1. VARIABLES GLOBALES Y ESTILOS BASE
+================================================================= */
+:root {
+  --color-primario: #003366;
+  --color-secundario: #E0B252;
+  --color-texto: #343a40;
+  --color-fondo-claro: #f8f9fa;
+  --color-fondo-blanco: #ffffff;
+}
+
+body {
+    background-color: var(--color-fondo-blanco);
+    color: var(--color-texto);
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg-light {
+    background-color: var(--color-fondo-claro) !important;
+}
+
+/* =================================================================
+   2. COMPONENTES REUTILIZABLES (Navbar, Footer, Headers)
+================================================================= */
+
+/* --- Barra Superior --- */
+.top-bar-wrapper {
+    font-size: 0.85rem;
+    width: 100%;
+}
+.top-bar-wrapper a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+.top-bar-wrapper a:hover { opacity: 0.8; }
+.contact-info-wrapper {
+    background-color: var(--color-primario);
+    padding: 0.5rem 0;
+    flex-grow: 1;
+}
+.social-links-wrapper {
+    background-color: var(--color-secundario);
+    padding: 0.5rem 0;
+    min-width: 250px;
+    flex-shrink: 0;
+}
+
+/* --- Navegación Principal --- */
+.navbar-brand .fw-bold {
+    font-family: 'Merriweather', serif;
+}
+.navbar .nav-link.active {
+    color: var(--color-secundario) !important;
+}
+.navbar-logo { height: 40px; }
+
+/* --- Encabezado de Página (General) --- */
+.page-header {
+  position: relative;
+  height: 40vh;
+  background-image: url('../img/nav.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Efecto Parallax */
+}
+.page-header::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0, 21, 41, 0.55);
+  z-index: 1;
+}
+.page-header .container {
+  position: relative;
+  z-index: 2;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- Footer --- */
+.footer-minimalista {
+    background-color: var(--color-primario);
+    color: rgba(255, 255, 255, 0.7);
+}
+
+/* --- Botones Personalizados --- */
+.btn-theme-secondary {
+    background-color: var(--color-secundario);
+    border-color: var(--color-secundario);
+    color: var(--color-primario);
+    font-weight: 500;
+}
+.btn-theme-secondary:hover {
+    background-color: #c89e49;
+    border-color: #c89e49;
+    color: #ffffff;
+}
+
+/* --- Clases de color para consistencia --- */
+.text-theme-secondary {
+    color: var(--color-secundario) !important;
+}
